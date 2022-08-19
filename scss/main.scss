@@ -12,6 +12,13 @@
     src: url("../fonts/Exo2-VariableFont_wght.ttf");
 }
 
+@import 'media';
+
+$font-1: 'ptsans-regular';
+$font-2: 'ptsans-bold';
+$font-3: 'exo';
+
+
 *{
     margin: 0;
     padding: 0;
@@ -31,10 +38,24 @@ main{
         .hero-1{
             width: 60%;
             height: 100%;
+            h1{
+                width: 610px;
+                font-family: 'exo';
+                font-size: 52px;
+            }
         }
         .hero-2{
             width: 40%;
             height: 100%;
+            background-color: #0B7572;
+            position: relative;
+            img{
+                width: 650px;
+                border-radius: 20px;
+                position: absolute;
+                top: 120px;
+                left: -120px;
+            }
         }
 
     }
