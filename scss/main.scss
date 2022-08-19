@@ -12,8 +12,6 @@
     src: url("../fonts/Exo2-VariableFont_wght.ttf");
 }
 
-@import 'media';
-
 $font-1: 'ptsans-regular';
 $font-2: 'ptsans-bold';
 $font-3: 'exo';
@@ -31,6 +29,9 @@ $font-3: 'exo';
 main{
     width: 100%;
     height: auto;
+
+    // HERO
+
     .hero{
         width: 100%;
         height: 800px;
@@ -40,8 +41,32 @@ main{
             height: 100%;
             h1{
                 width: 610px;
-                font-family: 'exo';
+                font-family: $font-3;
                 font-size: 52px;
+                padding-top: 200px;
+                margin-left: 100px;
+            }
+
+            p{
+                width: 525px;
+                font-family: $font-1;
+                color: #666;
+                margin-left: 100px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+
+            a{
+                margin-left: 100px;
+                font-family: $font-2;
+                color: #000;
+                border-bottom: 2px solid #fff000;
+                padding: 10px;
+                transition: .5s;    
+                &:hover{
+                    border-bottom: #fff000 3px solid;
+                    transition: .5s;
+                }
             }
         }
         .hero-2{
@@ -49,14 +74,186 @@ main{
             height: 100%;
             background-color: #0B7572;
             position: relative;
+            z-index: 1;
             img{
                 width: 650px;
                 border-radius: 20px;
                 position: absolute;
+                z-index: 2;
                 top: 120px;
-                left: -120px;
+                right: 100px;
             }
         }
 
     }
 }
+
+
+
+
+
+
+
+// MEDIA
+
+
+@media (min-width:1640px){
+    main{
+        .hero{
+            .hero-1{
+                h1{
+                    font-size: 70px;
+                    width: 900px;
+                }
+
+                p{
+                    width: 650px;
+                    font-size: 17px;
+                }
+
+                a{
+                    font-size: 17px;
+                }
+            }
+
+            .hero-2{
+                img{
+                    width: 700px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1380px){
+    main{
+        .hero{
+            
+            .hero-2{
+               
+                img{
+                    width: 600px;
+                    height: 400px;
+                    right: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px){
+    main{
+        .hero{
+            .hero-1{
+                h1{
+                    font-size: 48px;
+                }
+
+                p{
+                    width: 500px;
+                    font-size: 14px;
+                }
+                
+            }
+
+            .hero-2{
+                
+                img{
+                    width: 550px;
+                    height: 350px;
+                    right: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    main{
+        .hero{
+            .hero-1{
+                h1{
+                    margin-left: 70px;
+                    width: 570px;
+                    font-size: 42px;
+                }
+
+                p{
+                    margin-left: 70px;
+                    width: 450px;
+                    font-size: 14px;
+                }
+
+                a{
+                    margin-left: 70px;
+                }
+                
+            }
+
+            .hero-2{
+                
+                img{
+                    top: 140px;
+                    width: 500px;
+                    height: 400px;
+                    right: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:800px){
+    main{
+        .hero{
+            height: 743px;
+            .hero-1{
+                width: 80%;
+                h1{
+                    width: 466px;
+                    font-size: 44px;
+                    padding-top: 80px;
+                }
+
+                
+            }
+            .hero-2{
+                width: 20%;
+                img{
+                    top: 430px;
+                    width: 690px;
+                    height: 314px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:800px){
+    main{
+        .hero{
+            height: 743px;
+            .hero-1{
+                width: 80%;
+                h1{
+                    width: 466px;
+                    font-size: 44px;
+                    padding-top: 80px;
+                }
+
+                
+            }
+            .hero-2{
+                width: 20%;
+                img{
+                    top: 430px;
+                    width: 690px;
+                    height: 314px;
+                }
+            }
+        }
+    }
+}
+
