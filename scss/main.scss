@@ -15,6 +15,7 @@
 $font-1: 'ptsans-regular';
 $font-2: 'ptsans-bold';
 $font-3: 'exo';
+$main-color: #0B7572;
 
 
 *{
@@ -73,7 +74,7 @@ main{
         .hero-2{
             width: 40%;
             height: 100%;
-            background-color: #0B7572;
+            background-color: $main-color;
             z-index: 0;
             img{
                 width: 650px;
@@ -159,6 +160,46 @@ main{
         background-size:cover ;
         margin-top: 300px;
     }
+
+    // WHY US (CARD)
+
+    .why-us-card{
+        margin-top: 72px;
+        align-content: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2 , 450px);
+        grid-template-rows: repeat(2 , 80px);
+        grid-row-gap: 60px;
+        grid-column-gap: 140px;
+        .img{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #E9E9EC;
+            margin-right: 40px;
+        }
+
+        .card-item{
+            display: flex;
+            align-items: center;
+            h2{
+                font-family: $font-2;
+            }
+
+            p{
+                font-family: $font-3;
+                width: 291px;
+                line-height: 24px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    
 }
 
     
@@ -349,17 +390,28 @@ main{
             margin-top: 600px;
             height:383px;
         }
+
+        .why-us-card{
+            grid-template-columns: 90%;
+            grid-template-rows: repeat(4 , 88px);
+            grid-row-gap: 58px;
+            .card-item{
+                p{
+                    width: 380px;
+                }
+            }
+        }
     }
 }
 
 @media (max-width:385px){
     main{
         .hero{
-            height: 743px;
+            height: 766px;
             color: #fff;
             .hero-1{
                 color: #fff;
-                background-color: #0B7572;
+                background-color: $main-color;
                 width: 100%;
                 h1{
                     width: 334px;
@@ -377,13 +429,14 @@ main{
                 
                 a{
                     margin-left: 15px;
+                    color: #fff;
                 }
                 
             }
             .hero-2{
                 width: 0%;
                 img{
-                    top: 332px;
+                    top: 380px;
                     width: 345px;
                     height: 254px;
                     right: 15px;
@@ -446,6 +499,19 @@ main{
 
         .why-us{
             display: none;
+        }
+
+        .why-us-card{
+            margin-top: 600px;
+            grid-template-columns: 90%;
+            grid-template-rows: repeat(4 , 88px);
+            grid-row-gap: 58px;
+            .card-item{
+                p{
+                    width: 269px;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
