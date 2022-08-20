@@ -147,10 +147,21 @@ main{
                 }
             }
         }
-    }    
+    } 
+    
+    // WHY US
+
+    .why-us{
+        width: 100%;
+        height: 550px;
+        background-image: url("../images/why--us.jpg");
+        background-repeat: no-repeat;
+        background-size:cover ;
+        margin-top: 300px;
+    }
 }
 
-
+    
 
 
 
@@ -333,6 +344,11 @@ main{
                 }
             }
         }
+
+        .why-us{
+            margin-top: 600px;
+            height:383px;
+        }
     }
 }
 
@@ -426,6 +442,10 @@ main{
                 
 
             }
+        }
+
+        .why-us{
+            display: none;
         }
     }
 }
