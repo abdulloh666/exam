@@ -18,6 +18,12 @@ $font-3: 'exo';
 $main-color: #0B7572;
 
 
+p{
+    font-family: $font-3;
+    line-height: 24px;
+    font-size: 16px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -270,6 +276,7 @@ main{
         margin: auto;
         background-color: $main-color;
         display: flex;
+        
         h2{
             margin: 100px 0 0 81px;
             font-family: $font-1;
@@ -286,6 +293,92 @@ main{
             margin-right: 50px;
         }
         
+    }
+
+    .delivery{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        h2{
+            margin-top: 30px;
+            font-size: 48px;
+            font-family: $font-3;
+            height: 70px;
+            margin-bottom: 80px;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+            align-content: center;
+            justify-content: center;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: repeat(3, 245px);
+            grid-row-gap: 20px;
+            .delivery-card{
+                display: flex;
+                align-items: center;
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h3{
+                        font-size: 20px;
+                        font-family: $font-3;
+                        margin-bottom: 40px;    
+
+                    }
+
+                    p{
+                        width: 570px;
+                        height: 90px;
+                        font-size: 15px;
+                    }
+                }
+                img{
+                    width: 331px;
+                    height: 181px;
+                    margin-right: 58px;
+                }
+            }
+        
+        }
+        
+    }
+
+    .companies{
+        
+        width: 80%;
+        height: auto;
+        margin: auto;
+        h3{
+            font-size: 27px;
+            font-family: $font-3;
+        }
+        .logos{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 184px);
+            grid-template-rows: repeat(2, 184px);
+            align-content: center;
+            justify-content: center;
+            grid-column-gap: 120px;
+            .logo-card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    font-size: 20px;   
+                }
+
+                p{
+                    text-align: center;
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 
@@ -521,8 +614,20 @@ main{
                 height: 40px;
             }
             img{
-                width: 687px;
+                width: 600px;
                 height: 685px;
+                margin: auto;
+                margin-top: 120px;
+            }
+        }
+
+        .delivery{
+            .container{
+                .delivery-card{
+                    img{
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -688,6 +793,51 @@ main{
 
             }
         }
+
+        .table{
+            width: 100%;
+            height: auto;
+            h2{
+                font-size: 44px;
+                width: 345px;
+                height: 100px;
+                padding-top: 32px;
+                height: 40px;
+                font-size: 28px;
+                text-align: center;
+                margin: auto;
+            }
+            img{
+                width: 345px;
+                height: 507px;
+                margin: auto;
+                margin-top: 20px;
+            }
+        }
+
+        .delivery{
+            h2{
+                font-size: 28px;
+            }
+            .container{
+                grid-row-gap: 60px;
+                .delivery-card{
+                    
+                    .content{
+                        h3{
+                            font-size: 18px;
+                        }
+
+                        p{
+                            
+                            width: 241px;
+                            height: 85px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
