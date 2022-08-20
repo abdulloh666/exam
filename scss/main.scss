@@ -400,6 +400,26 @@ main{
             justify-content: center;
             grid-column-gap: 30px;
             grid-row-gap: 24px;
+            margin-top: 40px;
+            align-items: center;
+            .employee{
+                border-radius: 15px;
+                display: flex;
+                .content{
+                    margin-left: 40px;
+                    h3{
+                        font-size: 20px;
+                    }
+                    .fa-brands{
+                        color: #666;
+                        font-size: 22px;
+                        margin-top: 15px;
+                        padding-right: 15px;
+                    }
+                }
+                
+            }
+            
         }
     }
 }
