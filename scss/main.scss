@@ -423,7 +423,40 @@ main{
             }
             
         }
+        
+        
     }
+    .video{
+            width: 80%;
+            height: auto;
+            margin: auto;
+            video{
+                width: 1280px;
+                height: 720px;
+                margin: auto;    
+            }
+            h3{
+                font-family: $font-1;
+                font-size: 48px;
+            }
+
+            p{
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+    }
+
+    .video-div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        video{
+            width: 80%;
+        }
+    }
+    
 }
 
     
@@ -995,9 +1028,7 @@ main{
             }
         }
 
-        .video{
-            
-        }
+        
 
     }
 }
