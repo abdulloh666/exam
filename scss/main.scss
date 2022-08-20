@@ -405,6 +405,8 @@ main{
             .employee{
                 border-radius: 15px;
                 display: flex;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                padding: 20px 0;
                 .content{
                     margin-left: 40px;
                     h3{
@@ -683,6 +685,36 @@ main{
                 grid-template-rows: repeat(4, 184px);
             }
         }
+
+        .employees{
+            h3{
+                font-size: 44px;
+            }
+            .workers{
+                width: 100%;
+                grid-template-columns: repeat(2, 330px);
+                grid-template-rows: repeat(2, 290px);
+                .employee{
+                   width: 100%;
+                   height: 100%;
+                   flex-direction: column;
+                   img{
+                    margin-left: 30px;
+                    margin-bottom: 20px;
+                    width: 100px;
+                    height: 100px;
+                   }
+
+                   
+                }
+                .employee:nth-child(5){
+                    display: none;
+                }
+                .employee:nth-child(6){
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -918,6 +950,53 @@ main{
                     display: none;
                 }
             }
+        }
+
+        .employees{
+            h3{
+                font-size: 28px;
+            }
+            .workers{
+                width: 100%;
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(3, 160px);
+                grid-row-gap: 60px;
+                .employee{
+                   width: 100%;
+                   height: auto;
+                   display: flex;
+                   flex-direction: row;
+                   .content{
+                    margin-left: 15px;
+                    h3{
+                        font-size: 18px;
+                        width: 165px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        width: 172px;
+                    }
+                    }
+                    img{
+                        margin-left: 30px;
+                        margin-bottom: 20px;
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 15px;
+                    }
+
+                   
+                }
+                .employee:nth-child(4){
+                    display: none;
+                }
+                
+            }
+        }
+
+        .video{
+            
         }
 
     }
