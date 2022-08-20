@@ -172,6 +172,7 @@ main{
         grid-template-rows: repeat(2 , 80px);
         grid-row-gap: 60px;
         grid-column-gap: 140px;
+        margin-bottom: 120px;
         .img{
             width: 80px;
             height: 80px;
@@ -199,7 +200,93 @@ main{
         }
     }
 
-    
+    .service{
+        width: 100%;
+        height: auto;
+        .container{
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            .contents{
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                h2{
+                font-family: $font-3;
+                font-size: 48px;
+                margin-bottom: 32px;
+                
+            }
+
+            p{
+                font-family: $font-1;
+                width: 430px;
+                height: 41px;
+                font-size: 15px;
+                margin-bottom: 56px;
+            }
+            }
+            
+            .cards{
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                grid-template-columns: repeat(3, 363px);
+                grid-template-rows: 440px;
+                grid-column-gap: 30px;
+                .cards-item{
+                    img{
+                        width: 100%;
+                    }
+                }
+                h2{
+                    font-family: $font-1;
+                    font-size: 20px;
+                    margin-top: 24px;
+                    margin-left: 32px;
+                }
+
+                p{
+                    width: 291px;
+                    height: 41px;
+                    font-family: $font-1;
+                    color: #666;
+                    margin-left: 32px;
+                }
+
+                span{
+                    font-family: $font-2;
+                    margin-left: 32px;
+                    border-bottom: 2px solid #fff000;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .table{
+        width: 80%;
+        height: 917px;
+        margin: auto;
+        background-color: $main-color;
+        display: flex;
+        h2{
+            margin: 100px 0 0 81px;
+            font-family: $font-1;
+            color: #fff;
+            font-size: 48px;
+            width: 400px;
+            
+        }
+
+        img{
+            width: 652px;
+            height: 747px;
+            margin-top: 85px;
+            margin-right: 50px;
+        }
+        
+    }
 }
 
     
@@ -401,6 +488,43 @@ main{
                 }
             }
         }
+
+        .service{
+            .container{
+
+                .contents{
+                    width: 90%;
+                    h2{
+                        margin-top: 24px;
+                        margin-bottom: 16px;
+                    }
+                }
+                .cards{
+                    grid-template-columns: 90%;
+                    grid-template-rows: repeat(2, 600px);
+                    grid-row-gap: 90px;
+                    .cards-item:last-child{
+                        display: none;
+                    }
+                }
+
+            }
+        }
+
+        .table{
+            flex-direction: column;
+            h2{
+                font-size: 44px;
+                width: 328px;
+                height: 100px;
+                margin-top: 64px;
+                height: 40px;
+            }
+            img{
+                width: 687px;
+                height: 685px;
+            }
+        }
     }
 }
 
@@ -511,6 +635,57 @@ main{
                     width: 269px;
                     font-size: 14px;
                 }
+            }
+        }
+
+        .service{
+            
+            .container{
+
+                .contents{
+                h2{
+                    width: 344px;
+                    font-size: 28px;
+                    margin-top: 24px;
+                    margin-bottom: 16px;
+                }
+                p{
+                    margin-bottom: 24px;
+                    width: 300px;
+                    height: 62px;
+                    font-size: 15px;
+                }
+                }
+                
+                .cards{
+                    grid-template-columns: 90%;
+                    grid-template-rows: 345px;
+                    grid-row-gap: 90px;
+
+                    .cards-item{
+                        h2{
+                            margin-left: 20px;
+                        }
+
+                        p{
+                            margin-top: 16px;
+                            width: 291px;
+                            height: 39px;
+                            margin-left: 20px;
+                            margin-bottom: 24px;
+                            font-size: 15px;
+                        }
+
+                        span{
+                            margin-left: 20px;
+                            font-size: 15px;
+                        }
+                    }
+                    .cards-item:nth-child(2){
+                        display: none;
+                    }
+                }
+
             }
         }
     }
